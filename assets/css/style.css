@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  
+}
+/*------------------------------------- BODY -------------------------------------------------------*/
+body {
+	
+	background-image: url("../image/dust_scratches/dust_scratches.png");
+	background-repeat: repeat;
+	background-position:25% 75%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: #4aaaa5;
+	color: #777;
+	
+}
+/*------------------------------------- HEADER -------------------------------------------------------*/
+header {
+	
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	border-top: 1px solid #cccccc;
+	border-bottom: 2px inset #cccccc;
+	float: left;
+	position: absolute;
+    left: 0px;
+    top: 30px;
+}
+
+#setting-top {
+	width: 960px;
+
+}
+
+h1 {
+	background-color: #4aaaa5;
+	color: white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	width: 270px;
+	font-size: 24px;
+	text-align: center;
+	padding: 30px 25px 41px 25px;
+	display: block;
+	float: left;
+	margin-left: 21%;
+	margin-top: 0px;
+}
+
+h2 ,h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+
+/*---------------------------------- nav -------------------------------------------------------  */ 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+li {
+	
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+}
+
+li a {
+	color: #777;
+	text-decoration: none;
+}
+
+li a:hover {
+	font-size: 20px;
+	color: #4aaaa5;
+	text-decoration: none;
+}
+
+#list-top {
+	float: right;
+	padding: 30px;
+	margin-right: 11%;
+
+}
+
+#list2 {
+	border-left:  2px solid #F5F5F5;
+	border-right: 2px solid #F5F5F5;
+    line-height: 1px;
+
+}
+
+/* ----------------------------------------  MAIN CONTENT + SIDEBAR BACKGROUND SETTING ------------------------------------*/
+.onlyforBackground {
+position: relative;
+    left: 0px;
+    top: 130px;
+
+}
+/* ----------------------- MAIN CONTENT   --------------- -------------------------------------------------*/
+
+
+
+
+.main-section-content {
+	background-color: #fff;
+	border-color: orange;
+	width: 650px;
+	height: auto;
+	float: left;
+	margin-left: 200px;
+	margin-top: 20px;
+	padding: 30px;
+	overflow: auto;
+
+}
+
+#pic {
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 200px;
+    height: 200px;
+}
+ #paragraph-setting p {
+ 	 line-height: 200%;
+ 	 font-weight: 500;
+ 	 color: lightslategray;;
+ 	 font-size: 17px;
+ 	 
+ }
+
+/* ---------------------------------------------------------- SIDE BAR -------------------------------------------------*/
+
+.sidebar { 
+	background-color: #fff;
+	width: 270px;
+	height: auto;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	padding: 20px 30px;
+	text-align: center;
+}
+
+#contact-me {
+
+display: inline-flex;
+
+}
+
+img {
+	width: 50px;
+	height: 50px;
+	display: inline-flex;
+}
+img:hover {
+	width: 70px;
+	height: 70px;
+	border: 1px outset black;
+}
+
+
+
+/* ----------------------------Footer-----------------------------------------*/ 
+#sticky-footer {
+	 
+	 width: 100%;
+	 background-color: #666666;
+	 color: #eee;
+	 margin-top: 20px;
+	 padding: 50px 50px 10px 50px;
+	 text-align: center;
+	 font-weight: bold;
+     font-size: 12px;
+     position: fixed;
+     bottom: 0px;
+     left: 0px;
+     border-top: 5px solid #4aaaa5;
+     
+}
+
+/* ---------------------------------- CLEARFIX ------------------------------------- */
+.clearfix::after {
+    content: px;
+    clear: both;
+    display: table;
+    overflow: auto;
+
+}
+
+/* ---------------------------------- page - CONTACT FORM -------------------------------------------------------------- */
+
+
+
+.contact-form {
+    border-radius: 5px;
+    background-color: #999;
+    padding: 20px;
+    
+}
+
+input {
+	width: 100%;
+	border: 1px solid #eee;
+	padding: 10px;
+	float: left;
+}
+
+input::placeholder {
+  color: lightgray;
+  opacity: 1;
+  }
+
+textarea  {
+	width:600px; 
+	height:100px;
+	border: 1px solid #eee;
+	
+}
+#input-submit {
+    width: 30%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+#input-submit:hover {
+    background-color: blue;
+}
+
+#input-submit input {
+
+}
+#l1 ,#l2 ,#l3 {
+	width: 100%;
+	height: 10px;
+	padding-top: 10px;
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/* ---------------------------------- page - PORTFOLIO  ------------------------------------ */
+
+
+
+.portfolio-setting1 {
+	float: left;
+
+}
+.image-h4 {
+	position: relative; 
+   width: 100%
+
+}
+
+#portfolio-setting img {
+	float: left;
+	margin: 20px;
+	border: 2px solid #eee;
+	width: 250px;
+	height: 200px;
+	
+}
+/*------------ H4 tag setting for image------------- */
+#img1 { 
+   position: absolute; 
+   top: 135px;
+   left: 22px; 
+   width: 100%; 
+}
+#img2 { 
+   position: absolute; 
+   top: 135px;
+   left: 311px; 
+   width: 100%; 
+}
+
+#img3 { 
+   position: absolute; 
+   top: 370px;
+    left: 22px; 
+   width: 100%; 
+}
+
+#img4 { 
+   position: absolute; 
+   top: 370px;
+    left: 311px;
+   width: 100%; 
+}
+
+#img5 { 
+   position: absolute; 
+   top: 606px;
+    left: 22px; 
+   width: 100%; 
+}
+
+
+/*---- SPAN ------ */
+#text-setup1 {
+	color: white; 
+   background-color: #4aaaa5; 
+   padding: 20px 77px;
+   font-size: 14px;
+
+}
+#text-setup2 {
+	color: white; 
+   background-color: #4aaaa5; 
+   padding: 20px 70px; 
+   font-size: 14px;
+
+}
+#text-setup3 {
+	color: white; 
+   background-color: #4aaaa5; 
+   padding: 20px 60px; 
+   font-size: 14px;
+
+}
+#text-setup4 {
+	color: white; 
+   background-color: #4aaaa5; 
+   padding: 20px 50px; 
+   font-size: 14px;
+
+}
+#text-setup5 {
+	color: white; 
+   background-color: #4aaaa5; 
+   padding: 20px 81px; 
+   font-size: 14px;
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
