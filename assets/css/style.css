@@ -48,14 +48,13 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-/* @keyframes bonus {
+   @keyframes bonus {
     0%   {background-color:#4aaaa5; left:0px; top:0px;}
     25%  {background-image: url("../image/dotnet.png"); left:200px; top:0px;}
     50%  {background-image: url("../image/qc.jpg"); left:200px; top:200px;}
     75%  {background-image: url("../image/unb.jpg"); left:0px; top:200px;}
     100% {background-color:#4aaaa5; left:0px; top:0px;}
-} */
-
+}
 #logo:hover, #input-submit:hover {
   background: blue;
 }
