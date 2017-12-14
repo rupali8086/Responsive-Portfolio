@@ -14,7 +14,55 @@ body {
 	
 }
 /*------------------------------------- HEADER -------------------------------------------------------*/
-header {
+#navheader {
+  
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+
+#logo {
+  background: #4aaaa5;
+  color: white;
+  width: 270px;
+  height: 0%;
+  margin-top: 0px;
+  margin-left: 15%;
+  padding: 25px 40px 35px 35px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+    animation-name: bonus;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+/* @keyframes bonus {
+    0%   {background-color:#4aaaa5; left:0px; top:0px;}
+    25%  {background-image: url("../image/dotnet.png"); left:200px; top:0px;}
+    50%  {background-image: url("../image/qc.jpg"); left:200px; top:200px;}
+    75%  {background-image: url("../image/unb.jpg"); left:0px; top:200px;}
+    100% {background-color:#4aaaa5; left:0px; top:0px;}
+} */
+
+#logo:hover, #input-submit:hover {
+  background: blue;
+}
+
+
+
+/* header {
 	
 	width: 100%;
 	height: 100px;
@@ -45,10 +93,12 @@ h1 {
 	margin-left: 21%;
 	margin-top: 0px;
 }
-
+ */
 h2 ,h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /*---------------------------------- nav -------------------------------------------------------  */ 
@@ -80,7 +130,7 @@ li a:hover {
 #list-top {
 	float: right;
 	padding: 30px;
-	margin-right: 11%;
+	margin-right: 13%;
 
 }
 
@@ -105,7 +155,6 @@ position: relative;
 
 .main-section-content {
 	background-color: #fff;
-	border-color: orange;
 	width: 650px;
 	height: auto;
 	float: left;
@@ -140,8 +189,10 @@ position: relative;
 	float: left;
 	margin-left: 40px;
 	margin-top: 20px;
+  margin-bottom: 20px;
 	padding: 20px 30px;
 	text-align: center;
+	
 }
 
 #contact-me {
@@ -151,8 +202,9 @@ display: inline-flex;
 }
 
 img {
-	width: 50px;
-	height: 50px;
+	margin-top: 15px;
+	width: 65px;
+	height: 65px;
 	display: inline-flex;
 }
 img:hover {
@@ -196,7 +248,7 @@ img:hover {
 
 .contact-form {
     border-radius: 5px;
-    background-color: #999;
+    /*background-color: #999;*/
     padding: 20px;
     
 }
@@ -214,7 +266,7 @@ input::placeholder {
   }
 
 textarea  {
-	width:600px; 
+	width:510px; 
 	height:100px;
 	border: 1px solid #eee;
 	
@@ -223,8 +275,8 @@ textarea  {
     width: 30%;
     background-color: #4aaaa5;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 20px;
+    margin: 8px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -236,16 +288,8 @@ textarea  {
     background-color: blue;
 }
 
-#input-submit input {
-
-}
-#l1 ,#l2 ,#l3 {
-	width: 100%;
-	height: 10px;
-	padding-top: 10px;
-	text-align: left;
-	margin-bottom: 5px;
-	font-weight: bold;
+.form-group{
+	padding: 20px;
 }
 
 /* ---------------------------------- page - PORTFOLIO  ------------------------------------ */
@@ -266,92 +310,208 @@ textarea  {
 	float: left;
 	margin: 20px;
 	border: 2px solid #eee;
-	width: 250px;
+	width: 245px;
 	height: 200px;
 	
 }
-/*------------ H4 tag setting for image------------- */
-#img1 { 
-   position: absolute; 
-   top: 135px;
-   left: 22px; 
-   width: 100%; 
+
+.portfolio {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
 }
-#img2 { 
-   position: absolute; 
-   top: 135px;
-   left: 311px; 
-   width: 100%; 
+.portfolio:nth-child(even) {
+  margin-right: 40px;
 }
-
-#img3 { 
-   position: absolute; 
-   top: 370px;
-    left: 22px; 
-   width: 100%; 
+.portfolio img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
 }
-
-#img4 { 
-   position: absolute; 
-   top: 370px;
-    left: 311px;
-   width: 100%; 
+.portfolio h4 {
+  position: absolute;
+  bottom: 20px;
+  width: 91%;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
-
-#img5 { 
-   position: absolute; 
-   top: 606px;
-    left: 22px; 
-   width: 100%; 
-}
-
-
-/*---- SPAN ------ */
-#text-setup1 {
-	color: white; 
-   background-color: #4aaaa5; 
-   padding: 20px 77px;
-   font-size: 14px;
-
-}
-#text-setup2 {
-	color: white; 
-   background-color: #4aaaa5; 
-   padding: 20px 70px; 
-   font-size: 14px;
-
-}
-#text-setup3 {
-	color: white; 
-   background-color: #4aaaa5; 
-   padding: 20px 60px; 
-   font-size: 14px;
-
-}
-#text-setup4 {
-	color: white; 
-   background-color: #4aaaa5; 
-   padding: 20px 50px; 
-   font-size: 14px;
-
-}
-#text-setup5 {
-	color: white; 
-   background-color: #4aaaa5; 
-   padding: 20px 81px; 
-   font-size: 14px;
-
-}
-
-
 
 /*----------------------------------------------------------------------------------------------------------------------*/
+/* ------------------ @media Assignment Two  - (No Bootstrap) ----------------------------------------------*/
 
+@media screen and (max-width: 980px) {
+	#navheader {
+    /*position: fixed;*/
+    left: 0px;
+    top: 0px;
+	}
+	.logo {
+    margin-top: 0px;
+    margin-left: 12%;
+    }
 
+    #list-top {
+    float: right;
+    padding: 30px;
+    margin-right: 10%;
+	}
+	.main-section-content {
+    
+    max-width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 0px;
+    }
+	#pic{
+	width: 275px;
+    height:auto;
+    margin-bottom: 20px;
+	}
+	.sidebar{
+	margin-top: 0px;
+	max-width: 100%;
+  margin-left: 5%;
+  margin-top: 5%;
 
+	}
+	textarea  {
+	width: 350px;
+    height: 200px;
+	border: 1px solid #eee;
+	}
+	#portfolio-setting img {
+    float: left;
+    margin: 20px;
+    border: 2px solid #eee;
+    width: 340px;
+    height: 200px;
+	}
+	
+	
+}
+/*-------------------------------max-width: 768px---------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	
+	#logo {
+    margin-left: 2%;
+    }
 
+  	#list-top {
+    width: 50%;
+    margin: -2% -1.5% 0%;
+  	}
 
+  	nav {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+  	}
 
+  .main-section {
+    max-width: 100%;
+    margin-left: 5%;
+  }
+  textarea {
+    width: 550px;
+  }
 
+  #portfolio-setting img  {
+    width: 50%;
+  }
 
+  .sidebar {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
 
+  .portfolio {
+    width: 50%;
+  }
+  .image-h4 {
+    position: relative;
+    width: 50%;
+}
+	
+}
+/*-------------------------------max-width: 640px---------------------------------------------------------*/
+@media screen and (max-width: 640px) {
+	  #navheader {
+    position: static;
+  }
+
+  #logo {
+    width: 106%;
+    margin-left: -3%;
+  }
+
+  #list-top {
+    width: 101%;
+    height: 2%;
+    margin: -2% -1.5% 0%;
+    margin: -2% -1.5% 0%;
+    position: absolute;
+    top: 92px;
+    left: 10px; 
+    background-color: white;
+  }
+  ul li a{
+    padding: 0px 55px 0px 54px;
+  }
+  ul{
+    margin: -15px;
+  }
+  
+
+  .navbar {
+    margin-top: 0%;
+  }
+
+  .main-section {
+    margin-top: 4%;
+  }
+  .main-section-content {
+    width: 597px;
+    height: auto;
+    margin-left: 23px;
+    margin-top: -50px;
+}
+
+  #pic{
+  width: 555px;
+  }
+
+  #auth-image {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+    .sidebar {
+    width: 95%;
+    margin-bottom: 5%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+  .portfolio h4 {
+    width: 100%;
+  }
+  #portfolio-setting img  {
+    width: 100%;
+  }
+
+  }
+/*------------------------------------------------------------*/
