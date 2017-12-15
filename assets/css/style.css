@@ -55,7 +55,7 @@ body {
     75%  {background-image: url("../image/unb.jpg"); left:0px; top:200px;}
     100% {background-color:#4aaaa5; left:0px; top:0px;}
 }
-#logo:hover, #input-submit:hover {
+#logo:hover {
   background: blue;
 }
 
@@ -270,13 +270,22 @@ textarea  {
   position: relative; 
    width: 100%
 
+
+#portfolio-setting img {
+    float: left;
+    margin: 20px;
+    border: 2px solid #eee;
+    width: 250px;
+    height: 200px;
+}
 } */
+
 
 #portfolio-setting img {
 	float: left;
 	margin: 20px;
 	border: 2px solid #eee;
-	width: 200px;
+	width: 250px;
 	height: 200px;
 	
 }
@@ -284,10 +293,10 @@ textarea  {
 .portfolio {
   position: relative;
   float: left;
-  width: 274px;
+  width: 45%;
 /*margin: 20px 0 35px;*/
-  margin: 0px;
-  overflow: auto;
+  margin: 2px;
+  /*overflow: auto;*/
   display: inline;
 }
 
@@ -295,7 +304,7 @@ textarea  {
   margin-right: 40px;
 }
 .portfolio img {
-  
+  position: relative;
   width: 100%;
   border: 0 none;
   opacity: 0.8;
@@ -304,7 +313,7 @@ textarea  {
 .portfolio h4 {
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  width: 94%;
   padding: 15px;
   margin-left: 20px;
   margin-bottom: 15px;
@@ -411,7 +420,7 @@ textarea  {
   .image-h4 {
     position: relative;
     width: 40%;
-}
+ }
 .portfolio h4 {
     width: 40%;
   }
@@ -458,7 +467,7 @@ textarea  {
     height: auto;
     margin-left: 23px;
     margin-top: -50px;
-}
+   }
 
   #pic{
   width: 555px;
@@ -474,7 +483,6 @@ textarea  {
     margin-bottom: 5%;
     margin-top: 20px;
     margin-left: 20px;
-}
   }
 
   .portfolio {
