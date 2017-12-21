@@ -102,7 +102,7 @@ li a:hover {
 
 }
 
-#list2 {
+#setupForVerticalLine {
 	border-left:  2px solid #F5F5F5;
 	border-right: 2px solid #F5F5F5;
     line-height: 1px;
@@ -262,25 +262,6 @@ textarea  {
 
 /* ---------------------------------- page - PORTFOLIO  ------------------------------------ */
 
-/* .portfolio-setting1 {
-  float: left;
-
-}
- *//* .image-h4 {
-  position: relative; 
-   width: 100%
-
-
-#portfolio-setting img {
-    float: left;
-    margin: 20px;
-    border: 2px solid #eee;
-    width: 250px;
-    height: 200px;
-}
-} */
-
-
 #portfolio-setting img {
 	float: left;
 	margin: 20px;
@@ -294,9 +275,7 @@ textarea  {
   position: relative;
   float: left;
   width: 45%;
-/*margin: 20px 0 35px;*/
   margin: 2px;
-  /*overflow: auto;*/
   display: inline;
 }
 
@@ -333,7 +312,7 @@ textarea  {
     /*position: fixed;*/
     left: 0px;
     top: 0px;
-	}
+	 }
 	.logo {
     margin-top: 0px;
     margin-left: 12%;
@@ -343,26 +322,25 @@ textarea  {
     float: right;
     padding: 30px;
     margin-right: 10%;
-	}
-	.main-section-content {
+	 }
+	 .main-section-content {
     
-    max-width: 100%;
+    width: 50%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top: 0px;
     }
-	#pic{
-	width: 275px;
+	 #pic{
+	  width: 275px;
     height:auto;
     margin-bottom: 20px;
-	}
+	 }
 	.sidebar{
 	margin-top: 0px;
 	max-width: 100%;
   margin-left: 5%;
-  margin-top: 5%;
-
-	}
+  margin-top: 0%;
+  }
 	textarea  {
 	width: 350px;
     height: 200px;
@@ -372,11 +350,20 @@ textarea  {
     float: left;
     margin: 20px;
     border: 2px solid #eee;
-    width: 40%;
+    width: 128%;
     height: auto;
 	}
-	
-	
+  .portfolio {
+    width: 60%;
+    margin: 25px;
+    float: left;
+    }
+  .portfolio h4 {
+    width: 128%;
+    }
+  #portfolio-setting img  {
+    width: 128%;
+   }
 }
 /*-------------------------------max-width: 768px---------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -387,7 +374,7 @@ textarea  {
 
   	#list-top {
     width: 50%;
-    margin: -2% -1.5% 0%;
+    margin: 1% -1.5% 0%;
   	}
 
   	nav {
@@ -396,104 +383,101 @@ textarea  {
     margin-right: 2%;
   	}
 
-  .main-section {
-    max-width: 100%;
-    margin-left: 5%;
-  }
-  textarea {
+    .main-section-content {
+    
+    width: 90%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 0px;
+    }
+    textarea {
     width: 550px;
-  }
-
-  #portfolio-setting img  {
-    width: 40%;
-  }
-
-  .sidebar {
-    max-width: 100%;
-    margin-left: 5%;
+    }
+    .sidebar {
+    width: 90%;
+    margin-left: 3%;
     margin-bottom: 5%;
-  }
-
-  .portfolio {
+    margin-top: 3%;
+    }
+    .portfolio {
+    width: 40%;
+    height: 286px;
+    margin: 25px;
+    }
+  .portfolio h4 {
     width: 100%;
-  }
-  .image-h4 {
-    position: relative;
-    width: 40%;
- }
-.portfolio h4 {
-    width: 40%;
-  }
+    }
+  #portfolio-setting img  {
+    width: 100%;
+   }
+
 	
 }
 /*-------------------------------max-width: 640px---------------------------------------------------------*/
 @media screen and (max-width: 640px) {
 	  #navheader {
     position: static;
-  }
+    }
 
-  #logo {
+    #logo {
     width: 106%;
     margin-left: -3%;
-  }
+    }
 
-  #list-top {
+    #list-top {
     width: 100%;
     height: 2%;
-    margin: -2% -1.5% 0%;
-    margin: -2% -1.5% 0%;
+    margin: 1% -1.5% 0% 0%;
     position: absolute;
     top: 92px;
     left: 5px; 
     background-color: white;
-  }
-  ul li a{
+    }
+    ul li a{
     padding: 0px 30px 0px 30px;
-  }
-  ul{
+    }
+    ul{
     margin: -15px;
-  }
-  
-
-  .navbar {
+    }
+    .navbar {
     margin-top: 0%;
-  }
+    }
 
-  .main-section {
+    .main-section {
     margin-top: 4%;
-  }
-  .main-section-content {
+    }
+    .main-section-content {
     width: 597px;
     height: auto;
     margin-left: 23px;
     margin-top: -50px;
-   }
+    }
 
-  #pic{
-  width: 555px;
-  }
+    #pic{
+    width: 490px;
+    }
 
-  #auth-image {
+     #auth-image {
     width: 100%;
     margin-bottom: 5%;
-  }
+    }
 
     .sidebar {
-    width: 100%;
+    width: 94%;
     margin-bottom: 5%;
     margin-top: 20px;
     margin-left: 20px;
-  }
+    }
 
   .portfolio {
-    width: 100%;
-  }
+    width: 80%;
+    }
   .portfolio h4 {
     width: 100%;
-  }
+    }
   #portfolio-setting img  {
     width: 100%;
-  }
+   }
 
-  }
+}
 /*------------------------------------------------------------*/
